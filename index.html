@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>Student Registration Form</nav>
+        <div class="input-form">
+            <h1>Register Here</h1>
+            <form action="#" id="input-form">
+                <div class="input-group">
+                    <label for="name">Name</label><br>
+                    <input type="text" class="input-field" id="name" ><br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" class="input-field" id="email" ><br><br>
+               
+                    <label for="age">Age</label><br>
+                    <input type="number" class="input-field" id="age" ><br><br>
+               
+                    <label for="addr">Address</label><br>
+                    <input type="text" class="input-field" id="addr" ><br>
+                </div>
+                <div class="input-select">
+                    <label for="gender" class="Label">Gender</label><br>
+                    <input type="radio" id="male" value="Male" name="gender">Male
+                    <input type="radio" id="female" value="Female" name="gender">Female
+                </div>
+                <div class="input-select">
+                    <label for="skills" class="Label">Programming Languages</label><br>
+                    <input type="checkbox" name="skills" id="C" value="C">C
+                    <input type="checkbox" name="skills" id="C++" value="C++">C++
+                    <input type="checkbox" name="skills" id="Python" value="Python">Python
+                    <input type="checkbox" name="skills" id="Java" value="Java">Java
+                    
+                </div>
+                <div class="buttons">
+                    <button type="button" id="add-btn">REGISTER</button>
+                    <button type="button" id="delete-btn">DELETE</button>
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="table">
+            <h1>Registered Students</h1>
+            <div class="scroll">
+                <table id="display">
+                    <tr>
+                        <th>Description</th>
+                        <th>Profile</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
